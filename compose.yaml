@@ -2,7 +2,7 @@ services:
   web-app-php:
     build:
       context: .
-    container_name: web-app-php-service
+    container_name: ad-meetingcalendar-service
     ports:
       - "8000:8000"
     develop:
@@ -19,7 +19,7 @@ services:
 
   mongodb:
     image: mongo:latest
-    container_name: web-app-php-mongodb
+    container_name: ad-meetingcalendar-mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: rootPassword
@@ -27,11 +27,11 @@ services:
     ports:
       - "27111:27017"
     volumes:
-      - web-app-php-mongodb:/data/db/mongodb
+      - ad-meetingcalendar-mongodb:/data/db/mongodb
 
   postgresql:
     image: postgres:15
-    container_name: web-app-php-postgresql
+    container_name: ad-meetingcalendar-postgresql
     restart: always
     environment:
       POSTGRES_USER: user
@@ -40,7 +40,7 @@ services:
     ports:
       - "5112:5432"
     volumes:
-      - web-app-php-postgresql:/data/db/postgresql
+      - ad-meetingcalendar-postgresql:/data/db/postgresql
 
 volumes:
   web-app-php-mongodb:
