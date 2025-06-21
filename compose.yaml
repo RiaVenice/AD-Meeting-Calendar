@@ -1,5 +1,5 @@
 services:
-  web-app-php:
+  ad-meetingcalendar:
     build:
       context: .
     container_name: ad-meetingcalendar-service
@@ -43,7 +43,7 @@ services:
       - ad-meetingcalendar-postgresql:/data/db/postgresql
 
 volumes:
-  web-app-php-mongodb:
+  ad-meetingcalendar-mongodb:
     driver: local
-  web-app-php-postgresql:
+  ad-meetingcalendar-postgresql:
     driver: local
