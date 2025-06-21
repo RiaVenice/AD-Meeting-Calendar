@@ -25,7 +25,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: rootPassword
       MONGO_INITDB_DATABASE: database
     ports:
-      - "27111:27017"
+      - "23567:27017"
     volumes:
       - ad-meetingcalendar-mongodb:/data/db/mongodb
 
@@ -38,7 +38,7 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database
     ports:
-      - "5112:5432"
+      - "5555:5432"
     volumes:
       - ad-meetingcalendar-postgresql:/data/db/postgresql
 
