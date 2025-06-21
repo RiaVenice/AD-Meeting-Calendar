@@ -1,6 +1,20 @@
-<?php 
+<?php
+include BASE_PATH . "/layouts/main.layout.php";
 
-include_once BASEPATH . 'handlers/postgreChecker.handler.php'
+$title = "Landing Page";
 
+renderMainLayout(
+    function () {
+        ?>
+        <div id="connection-status">
+            <h1>Database Connection Status</h1>
+            <?php
+                include_once BASE_PATH . "/handlers/mongodbChecker.handler.php";
+                include_once BASE_PATH . "/handlers/postgreChecker.handler.php";
+            ?>
+        </div>
+        <?php
+    },
+    $title
+);
 ?>
-
