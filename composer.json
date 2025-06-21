@@ -1,10 +1,10 @@
 {
-    "name": "your-username-here/project-name-here",
+    "name": "riavenice/ad-meeting-calendar",
     "type": "project",
     "authors": [
         {
-            "name": "your-username-here",
-            "email": "your-email-here@gmail.com"
+            "name": "RiaVenice",
+            "email": "riatcruz.v1@gmail.com"
         }
     ],
     "scripts": {
