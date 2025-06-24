@@ -12,5 +12,6 @@ $pgConfig = [
 ];
 
 $mongoConfig = [
-    'uri' => $_ENV['MONGO_URI']
+    'uri' => $_ENV['MONGO_URI'],
+    'db' => $_ENV['MONGO_DB']
 ];
