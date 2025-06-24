@@ -38,7 +38,7 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: database
     ports:
-      - "5112:5432"
+      - "5555:5432"
     volumes:
       - ad-meetingcalendar-postgresql:/data/db/postgresql
 
