@@ -1,5 +1,4 @@
 <?php
-require BASE_PATH . '/vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
 $dotenv->load();
@@ -13,6 +12,5 @@ $pgConfig = [
 ];
 
 $mongoConfig = [
-    'uri' => $_ENV['MONGO_URI'],
-    'db' => $_ENV['MONGO_DB']
+    'uri' => $_ENV['MONGO_URI']
 ];
